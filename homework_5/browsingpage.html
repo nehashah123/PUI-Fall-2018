@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+<!--creates the top nav bar area-->
+  <div class=header>
+    <div class=homepageheader>
+      <a href='home.html'>Bun Bun Bake Shop </a>
+    </div>
+    <div class=buncart>
+      <img class=buncart src='cinnacart.png' alt = 'cart image'>
+    </div>
+    <div class=cinnacount>
+    0
+    </div>
+  </div>
+<!--creates the sidebar-->
+  <div class=sidebar>
+    <div class=aboutsidebar>
+      About
+    </div>
+    <div class=contactsidebar>
+      Contact
+    </div>
+  </div>
+<!--create divs for every sub-section of the product browsing page-->
+    <div>
+      <img class=descriptionimage src='cinnacart.png' alt = 'cart image'>
+    </div>
+    <div id=descriptiontext>
+      <p>
+        We are so ready for fall!
+        Enjoy our delicious pumpkin spice cinnamon rolls - one of our best sellers.
+      </p>
+    </div>
+  <div class=flavor>
+    Flavors
+  </div>
+<!--this creates a grid by which to populate all the flavor options-->
+  <div class=flavorgrid>
+      <div><img src='walnut.png' alt='og roll'></div>
+      <div><img src='blackberry.png' alt='og roll'></div>
+      <div><img src='original.png' alt='og roll'></div>
+      <div><img src='pecan.png' alt='og roll'></div>
+      <div><img src='pumpkin.png' alt='og roll'></div>
+      <div><img src='gflogo.png' alt='og roll'></div>
+  </div>
+  <div class=glaze>
+    Glazes
+  </div>
+<!--this creates a grid to populate glaze options-->
+    <div class=glazegrid>
+      <div>Sugar Milk</div>
+      <div>None</div>
+      <div>Double Chocolate</div>
+      <div>Vanilla Milk</div>
+    </div>
+
+  <div id=price>
+    Price
+  </div>
+
+  <div id=money>
+    $2.75
+  </div>
+
+  <div id=qty>
+    Quantity
+  </div>
+<!--because this version isn't interactive, I didn't create separate divs for the
+ add and remove quantity and left them as text for now. For future iteration with interactivity
+ this will be split into further divs-->
+  <div class=qtyselector>
+  -   1   +
+  </div>
+  <div class=atc>
+  <a href='detailpage.html'>Add to Pastry Box</a>
+  </div>
+</body>
