@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!--interactivity-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--creates the top nav bar area-->
+  <div class=header>
+    <div class=homepageheader>
+      <a href='home.html'>Bun Bun Bake Shop </a>
+    </div>
+    <div class=buncart>
+<!--image taken from https://thenounproject.com/search/?q=cinnamon%20roll&i=699438-->
+      <a href='detailpage.html'><img class=buncart src='assets/pastrybox.png' alt = 'cart image'></a>
+    </div>
+    <div class=cinnacount>
+    0
+    </div>
+  </div>
+<!--creates the sidebar-->
+  <div class=sidebar>
+    <div class=aboutsidebar>
+      About
+    </div>
+    <div class=contactsidebar>
+      Contact
+    </div>
+  </div>
+<!--create divs for every sub-section of the product browsing page-->
+    <div class =descriptiontext>
+      <img id=bigimage src='assets/iphone8.png' alt = 'cart image'>
+    </div>
+  <div class=flavor>
+    Flavors
+  </div>
+<!--this creates a grid by which to populate all the flavor options-->
+  <div class=flavorgrid>
+    <!--image attributions:
+    https://thenounproject.com/search/?q=gluten%20free&i=957358
+    https://unsplash.com/photos/3w6qAk35xAg
+    https://unsplash.com/photos/0tOx23hNXE8
+    https://unsplash.com/photos/oAAE80J0dRk
+    https://unsplash.com/photos/-JU0sqGjeC0
+    https://unsplash.com/photos/dfWhZhyAli8
+    all have creative commons license-->
+    <!--
+      <div ><img id = walnut src='walnut.png' alt='og roll'></div>
+      <div ><img src='blackberry.png' alt='og roll'><img src='blackberry_selected.png'></div>
+      <div ><img src='original.png' id = og  alt='og roll'></div>
+      <div ><img id = pecan  src='pecan.png' alt='og roll'></div>
+      <div ><img id = pumpkin src='pumpkin.png' alt='og roll'></div>
+      <div ><img id = gf src='gflogo.png' alt='og roll'></div>-->
+      <table>
+        <tr>
+          <th><div class = parent><img class = image1 src='assets/walnut.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/walnut_selected.png' alt='hover on'></div></th>
+          <th><div class = parent><img class= image1 src='assets/blackberry.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/blackberry_selected.png' alt='hover on'></div></th>
+          <th><div class = parent><img class=image1 src='assets/original.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/original_selected.png' alt='hover on'></div></th>
+        </tr>
+        <tr>
+          <th><div class = parent><img class = image1 src='assets/gflogo.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/gflogo_selected.png' alt='hover on'></div></th>
+          <th><div class = parent><img class= image1 src='assets/pecan.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/pecan_selected.png' alt='hover on'></div></th>
+          <th><div class = parent><img class=image1 src='assets/pumpkin.png' width=130 height=130 alt='og roll'><img class=image2 width=130 height=130 src='assets/pumpkin_selected.png' alt='hover on'></div></th>
+        </tr>
+
+      </table>
+  </div>
+  <div class=glaze>
+    Glazes
+  </div>
+<!--this creates a grid to populate glaze options-->
+    <div class=glazegrid>
+      <table>
+        <tr>
+          <th><div class=glaze1>Sugar Milk</div></th>
+          <th><div class=glaze1>Vanilla Milk</div></th>
+        </tr>
+        <tr>
+          <th><div class=glaze1>Double Chocolate</div></th>
+          <th><div class=glaze1>None</div></th>
+        </tr>
+      </table>
+    </div>
+      <!--<div>Sugar Milk</div>
+      <div>None</div>
+      <div>Double Chocolate</div>
+      <div>Vanilla Milk</div>
+    </div>-->
+
+  <div id=price>
+    Price
+  </div>
+
+  <div id=money>
+    $2.75
+  </div>
+
+  <div id=qty>
+    Quantity
+  </div>
+<!--because this version isn't interactive, I didn't create separate divs for the
+ add and remove quantity and left them as text for now. For future iteration with interactivity
+ this will be split into further divs-->
+  <div class=qtyselector>
+  <div class=subtract></div>
+  <div class=number>1</div>
+  <div class=add>+</div>
+  </div>
+  <div class=atc></div>
+</body>

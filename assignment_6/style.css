@@ -1,0 +1,513 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F5EE;
+}
+/*standardized link behavior that does not make link blue*/
+a:link{
+  color:black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:grey;
+  text-decoration: underline;
+}
+a:visited{
+  color:black;
+  text-decoration: none;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity:0;
+}
+
+.glaze1:hover{
+outline: 3px solid;
+outline-color: #D2B725;
+}
+
+.glaze1.activeglaze {
+  outline: 3px solid;
+  outline-color: #D2B725;
+}
+.active{
+  opacity:1;
+}
+.image2:hover{
+  opacity:1;
+}
+
+.flavorgrid table{
+  position:fixed;
+  top: 15%;
+  left: 50%;
+}
+
+.glazegrid table{
+  position:fixed;
+  top: 56%;
+  left: 50%;
+}
+
+#heroimg {
+width: 85%;
+height: 100vh;
+}
+
+#hero {
+  position:fixed;
+}
+
+#title {
+  position: fixed;
+  top: 15%;
+  left:2%;
+  background-color: #8C4132;
+  opacity: 0.75;
+  padding: 20px;
+  color:white;
+  font-size: 55px;
+}
+
+.about {
+  position: fixed;
+  bottom: 25%;
+  left: 2%;
+  padding:7px;
+  background-color: #C4C4C4;
+  opacity: .75;
+  font-size: 40px;
+  padding-right:50px;
+  text-align: center;
+}
+
+.contact {
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+  padding:7px;
+  background-color: #C4C4C4;
+  opacity: .75;
+  font-size: 40px;
+}
+
+.space {
+  position: fixed;
+  top:50%;
+  right:20%;
+}
+/*used across all webpages*/
+.buncart{
+  position: fixed;
+  top:1.25%;
+  right:2%;
+  width: 7%;
+  height: 11%;
+
+}
+/*used across all webpages*/
+
+.cinnacount{
+  position: fixed;
+  top:2%;
+  right: 2%;
+  font-size:25px;
+  outline-color:#D2B725;
+  background-color:#D2B725;
+  padding:3px;
+}
+.explore{
+  position:fixed;
+  top:50%;
+  right:7.5%;
+  width:200px;
+  background-color: #D2B725;
+  opacity:0.75;
+  padding: 25px;
+  font-size: 40px;
+}
+
+#pastrybox{
+  position: fixed;
+  right:7.5%;
+  bottom:3%;
+  background-color: #C4C4C4;
+  padding:15px;
+  padding-right:33px;
+  font-size:15px;
+  width:200px;
+  text-align: center;
+}
+/*used across product browsing and detail pages*/
+
+.header{
+  background-color: #8C4132;
+  opacity: 0.75;
+  height:12%;
+  width:100%;
+
+}
+/*used across product browsing and detail pages*/
+.homepageheader{
+  font-size:20px;
+  width:100px;
+  line-height: 1.1;
+  padding-top: 10px;
+  padding-left: 10px;
+  color:white;
+}
+/*used across product browsing and detail pages*/
+.aboutsidebar{
+  position: fixed;
+  bottom: 20%;
+  left: .5%;
+  padding:7px;
+  background-color: #C4C4C4;
+  opacity: .75;
+  font-size: 20px;
+  padding-right:30px;
+  text-align: center;
+}
+/*used across product browsing and detail pages*/
+.contactsidebar{
+  position: fixed;
+  bottom: 10%;
+  left: .5%;
+  padding:7px;
+  background-color: #C4C4C4;
+  opacity: .75;
+  font-size: 20px;
+  text-align: center;
+}
+/*used across product browsing and detail pages*/
+.sidebar{
+  background-image: url('assets/bunsidebar.png');
+  background-color:#000000;
+  position:fixed;
+  width:7%;
+  height:100%;
+}
+
+/*used across product browsing and detail pages*/
+.descriptionimage{
+  position:fixed;
+  top:12%;
+  left:10%;
+  width:15%;
+  height:30%;
+}
+
+.descriptiontext img{
+  position:fixed;
+  top:25%;
+  left:7%;
+  width: 30%;
+}
+
+.flavor{
+  position:fixed;
+  top:15%;
+  right:55%;
+  background-color: #C4C4C4;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-left:20px;
+  padding-right: 20px;
+
+}
+
+.flavorgrid{
+  width: 450px;
+  height: 650px;
+  position:fixed;
+  top:15%;
+  right:23.2%;
+}
+/*creating grid behavior by float attribute
+.flavorgrid img{
+width: 130px;
+height: 130px;
+outline: 1px solid;
+float: right;
+margin:5px;
+
+}*/
+
+.glaze{
+  position:fixed;
+  top:56%;
+  right:55%;
+  background-color: #C4C4C4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left:23px;
+  padding-right: 20px;
+
+}
+/*creating grid behavior by float attribute*/
+/*.glazegrid {
+  width: 400px;
+  height: 600px;
+  position:fixed;
+  right:30%;
+  top:62%;
+  text-align:center;
+
+}
+
+*/
+.glazegrid div{
+width: 152px;
+height: 30px;
+outline: 1px solid;
+float: right;
+margin:5px;
+margin-bottom: 10px;
+}
+
+#qty {
+  position:fixed;
+  top:81%;
+  right:55%;
+  background-color: #C4C4C4;
+  padding:10px;
+  padding-left:12px;
+  padding-right:13px;
+}
+
+.subtract{
+  position: fixed;
+  right:45%;
+  top:81%;
+  font-size:30px;
+}
+
+.number{
+  position: fixed;
+  right:42%;
+  top:81%;
+  font-size:30px;
+}
+
+.add{
+  position: fixed;
+  right:39%;
+  top:81%;
+  font-size:30px;
+}
+
+#price{
+  position:fixed;
+  top:71%;
+  right:55%;
+  background-color: #C4C4C4;
+  padding:10px;
+  padding-right:28px;
+  padding-left:28px;
+
+}
+
+#money{
+  position: fixed;
+  right:44%;
+  top:71%;
+  font-size:30px;
+}
+/*used across product browsing and detail page*/
+.atc{
+  background-color:#D2B725;
+  width: 30%;
+  position: fixed;
+  bottom:5%;
+  right:22%;
+  padding:10px;
+  text-align: center;
+  color:white;
+}
+
+#totalqty{
+  position:fixed;
+  top:15%;
+  right:42%;
+  background-color: #C4C4C4;
+  padding:10px;
+  padding-right:50px;
+  padding-left:50px;
+
+}
+
+.qtyselected{
+  position:fixed;
+  top:23%;
+  right:48%;
+}
+
+
+#rolltype{
+  position:fixed;
+  top:15%;
+  right:25%;
+  background-color: #C4C4C4;
+  padding:10px;
+  padding-right:60px;
+  padding-left:60px;
+
+}
+
+.typeselected{
+  position:fixed;
+  top:23%;
+  right:25%;
+  width:150px;
+}
+
+#sellmore{
+  position:fixed;
+  top:50%;
+  right:24%;
+  background-color: #C4C4C4;
+  padding:10px;
+  padding-right:140px;
+  padding-left:140px;
+}
+
+.decision{
+  width: 500px;
+  height: 600px;
+  position:fixed;
+  right:26%;
+  top:57%;
+  text-align:center;
+}
+
+/*creating grid behavior by float attribute*/
+.decision div{
+  width: 170px;
+  height: 30px;
+  outline: 1px solid;
+  float: right;
+  margin:5px;
+  margin-bottom: 10px;
+  margin-right:8px;
+}
+
+#total{
+  position:fixed;
+  top:68%;
+  right:38%;
+  background-color: #C4C4C4;
+  padding:20px;
+  padding-right:50px;
+  padding-left:50px;
+
+}
+
+#totalprice{
+  position:fixed;
+  top:66%;
+  right:25%;
+  padding:20px;
+  font-size:40px;
+
+}
+#caveat{
+  position:fixed;
+  bottom:19%;
+  right:39.5%;
+  padding:10px;
+  font-size:12px;
+}
+
+#images img{
+  width:150px;
+  height:150px;
+}
+#descrip th{
+  width: 250px;
+}
+
+.boxes {
+  position:fixed;
+  left: 20%;
+  top:20%;
+}
+#goback{
+  position:fixed;
+  left:8%;
+  top:12%;
+  background-color: #D2B725;
+  padding:2px;
+}
+
+#goback a{
+    color:white;
+}
+
+#totalcount{
+  position:fixed;
+  left:33%;
+  top:65%;
+  font-size:25px;
+}
+
+#gotocart{
+  position:fixed;
+  left:43%;
+  top:80%;
+  background-color:#D2B725;
+  padding:5px;
+}
+
+#gotocart a{
+  font-size:25px;
+  color: white;
+}
+
+#boxinfo{
+  position:fixed;
+  right:12%;
+  top:20%;
+}
+
+#boxinfo th{
+  width:100px;
+
+  border-bottom: 1px solid;
+}
+#boxinfo th:nth-child(2){
+  width:230px;
+}
+
+#boxinfo tr:nth-child(1) th:nth-child(4){
+  color:white;
+  background-color:#D2B725;
+  width:150px;
+  border-radius: 25px;
+  height:20px;
+  font-size:15px;
+}
+
+#checkout{
+  background-color:#D2B725;
+  width: 30%;
+  position: fixed;
+  bottom:7%;
+  right:23%;
+  padding:10px;
+  text-align: center;
+  color:white;
+  font-size:25px;
+}

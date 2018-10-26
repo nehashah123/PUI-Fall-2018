@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Bake Shop</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!--interactivity-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--create the same header as exists on product browsing page-->
+  <div class=header>
+    <div class=homepageheader>
+      <a href='home.html'>Bun Bun Bake Shop </a>
+    </div>
+    <div class=buncart>
+<!--image taken from https://thenounproject.com/search/?q=cinnamon%20roll&i=699438-->
+      <a href='detailpage.html'><img class=buncart src='assets/pastrybox.png' alt = 'cart image'></a>
+    </div>
+    <div class=cinnacount>
+    3
+    </div>
+  </div>
+<!--create the same sidebar that exists on the product browsing page-->
+  <div class=sidebar>
+    <div class=aboutsidebar>
+      About
+    </div>
+    <div class=contactsidebar>
+      Contact
+    </div>
+  </div>
+  <div id=goback>
+    <a href='browsingpage.html'> &lt;&lt; Back to the Buns</a>
+  </div>
+  <table class=boxes>
+    <tr id=images>
+      <th><img src='assets/pastrybox.png' alt='filled pastry box'></th>
+    </tr>
+    <tr id = descrip>
+    </tr>
+  </table>
+  <div id= totalcount></div>
+  <div id = gotocart><a href='detailpage.html'>Go to Cart</a></div>
+<!-- add code for button to "browsing page" for shopping cart pre-checkout process-->
+<!--detail page will need to be changed to be for each pastry box and then the data will need to be realtime-->
+</body>
+</html>
