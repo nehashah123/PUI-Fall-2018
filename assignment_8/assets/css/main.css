@@ -1,0 +1,580 @@
+#heroblurb{
+  color: #fff;
+  margin-bottom: 5px;
+  background-color: #0F043D;
+  padding: 50px 90px;
+  /*display: flex;*/
+  align-items: flex-end;
+  width:100%;
+  /*margin-top: 200px;*/
+}
+
+
+#heroblurb h1{
+  font-size: 50px;
+  font-weight: 100;
+}
+#mainimg{
+  position:relative;
+  width:60%;
+}
+
+
+.circle{
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+  background-color:white;
+  overflow: hidden;
+  margin:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.circleimg{
+  display:block;
+margin: 0 auto;}
+
+#researchproducts{
+  width:100%;
+  height:100%;
+  height:270px;
+  color:#0B032E;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+#researchproducts h1{
+  float:right;
+}
+
+.priceperception{
+  /*background-color:#180665;*/
+  color:#0B032E;;
+  width:100%;
+  height:100%;
+  font-size: 25px;
+  padding:10px;
+  font-family:'Playfair Display', serif;
+}
+
+
+.persuasive{
+  color:#0B032E;;
+  width:100%;
+  height:100%;
+  font-size: 25px;
+  padding:10px;
+}
+
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.buildproducts{
+  width:100%;
+  height:100%;
+  height:270px;
+  color:#0B032E;
+  position: relative;
+  padding: 0 30px 0 15px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.buildproducts img {
+  opacity: 0.30;
+}
+
+.buildproducts h1{
+    position: absolute;
+    font-size: 40px;
+    text-align: right;
+    margin-right: 20px;
+    right: 0;
+    top: 0;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.10);
+}
+.buildproducts h1 span.leading {
+  font-size: 60px;
+}
+
+.buildproducts h1 span.leading1 {
+  font-size: 60px;
+}
+
+
+.buildproducts h1{
+  float:right;
+}
+
+
+
+.row{
+  background-color:white;
+  /*margin-bottom:100px;*/
+}
+.col-md-4{
+  border-right-style:solid;
+  border-right-color:white;
+}
+
+
+.content-item {}
+.content-item-title {
+  font-size: xx-large;
+}
+.content-item-text {
+  font-family:'Open Sans';
+  font-size:16px;
+  padding-left:60px;
+  font-weight:300;
+
+}
+.content-item-index {
+  width: 48px;
+  height: 48px;
+  /*border: 2px solid rgba(0,0,0,1);*/
+  /*color: #000;*/
+  padding: 5px;
+  font-size: x-large;
+  opacity: 0.70;
+  font-family: 'Playfair Display';
+  font-weight:900;
+}
+.content-item-title-main {
+  margin-left: 15px;
+  font-size: 30px;
+  font-family:'Playfair Display';
+  font-weight:900;
+}
+
+.navbar-default{
+  margin:0;
+  background-color: #0F043D;
+  border-color: #0F043D;
+}
+
+
+.navbar-default:after{
+  content: "";
+    display: block;
+    margin: 0 auto;
+}
+
+/* .container-fluid{
+  padding:0 90px;
+} */
+.navbar-brand h2{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#firstline{
+  font-size: 70px;
+  font-weight: 500;
+  display:block;
+  width:100%;
+}
+
+#secondline{
+font-size: 40px;
+opacity: 0.50;
+display:block;
+width:100%;
+text-align:right;
+padding-bottom: 60px;
+}
+
+.navbar-brand h2{
+  color:white;
+  font-size:40px;
+  font-family:'Playfair Display';
+  font-weight:700;
+  opacity:0.7;
+}
+
+.navbar-header a{
+  font-size:20px;
+}
+.navbar-header{
+  padding-top:20px;
+}
+
+/*
+.ml10 .letter {
+  transform-origin: 0 0;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml10 .letter1 {
+  transform-origin: 0 0;
+  display: inline-block;
+  line-height: 1em;
+}*/
+
+#internalnav{
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 10px;
+  overflow-x: hidden;
+  padding: 8px 0;
+  float:left;
+  width:10%;
+}
+
+.nav-pills a{
+  color:#0B032E;
+
+}
+
+.nav-pills>li>a:hover{
+  color:white;
+  background-color:#0B032E;
+  opacity:0.3;
+  width:90%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color:white;
+  background-color:#0B032E;
+  opacity:0.3;
+  width:90%;
+}
+
+#projectbody{
+float:right;
+width:90%;
+font-size:16px;
+font-family:'Open Sans', sans-serif;
+
+
+}
+@media screen and (max-width:1024px){
+  #projectbody{
+    width:100%;
+  }
+  #internalnav{
+    width:0;
+  }
+}
+
+
+
+.keytakeaways .lead{
+  font-family:'Open Sans';
+  font-weight:300;
+}
+
+.keytakeaways b{
+  font-family:'Open Sans';
+  font-weight:900;
+}
+.keytakeaways p{
+  font-family:'Open Sans';
+  font-weight:300;
+}
+
+.keytakeaways img{
+  position:relative;
+  float:left;
+  opacity:0.8;
+
+}
+
+p{
+  margin:0 0 0;
+}
+
+.keytakeaways{
+  background-color:#E5E5E5;
+  color:#737373;
+
+}
+
+#takeawaywords{
+  margin-top:20px;
+}
+
+
+.panel-body h1, h2, h3{
+  font-family:'Open Sans';
+  font-weight:700;
+
+}
+
+.subtext{
+  opacity:0.8;
+}
+
+
+@media screen and (max-width: 768px){
+  #firstline{
+    font-size:60px;
+  }
+  #secondline{
+    font-size:30px;
+  }
+}
+
+
+/*taken from http://ianlunn.github.io/Hover/*/
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #0F043D;
+  color: white;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0F043D;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.title{
+  font-size:40px;
+  font-family:'Open Sans', serif;
+  font-weight:900;
+  color:#0F043D;
+}
+
+.subtitle{
+  font-size:20px;
+  color:#0F043D;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  margin-bottom:10px;
+}
+
+.panel{
+  margin-bottom:0px;
+}
+
+.panel-body{
+  padding-top:0;
+}
+
+/*taken from http://ianlunn.github.io/Hover/*/
+/* Grow */
+.hvr-grow {
+  /*display: inline-block;
+  vertical-align: middle;*/
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.title-adjust{
+  margin-top:30px;
+}
+
+/* Underline Reveal */
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  background:white;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+
+.navbar {
+  border-radius:0px;
+}
+
+.navbar-nav>li>a:hover, .nav>li>a:hover{
+  color:white;
+}
+
+#perceptionicon{
+  float:left;
+}
+#detailbody1, #detailbody2{
+  float:right;
+}
+
+.justification p{
+  line-height: 2;
+  font-weight:300;
+}
+
+.panel-body li{
+  line-height:1.8;
+  font-weight:300;
+}
+
+.iwt i{
+  font-size: 50px;
+}
+
+
+.iwt h3{
+  margin-left:30px;
+}
+
+#projectdetails{
+  display:inline-block;
+}
+
+.tags{
+  font-weight:300;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  font-style:italic;
+  padding-left:60px;
+}
+
+.panel-body h3, .justification h3{
+  color:#4F4F4F;
+}
+
+#projectbody img{
+  box-shadow:0 1px 3px 0 rgba(0,0,0,0.2),0 1px 4px 0 rgba(0,0,0,0.19)
+}
+
+/*taken from http://tobiasahlin.com/moving-letters/#16 */
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  /* font-weight: 800; */
+  font-size: 4em;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5em;
+  overflow: hidden;
+  font-family:'Open Sans';
+  font-weight:300;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#nehaimg{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:30px;
+}
+
+#aboutme{
+  line-height:2;
+}
+
+#projectdetails i{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#projectdetails h3{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social{
+  display:inline-block;
+}
+
+.aboutdata{
+  padding-left:30px;
+  line-height:2.5;
+}
+
+@media screen and (max-width:1024px){
+  iframe {
+    width:320px;
+    height:180px;
+  }
+}
