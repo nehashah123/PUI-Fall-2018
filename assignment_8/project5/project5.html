@@ -10,7 +10,7 @@
   <!-- css -->
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/main.css" rel="stylesheet">
-<!-- <link rel="stylesheet" href="../assets/css/animate.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/css/animate.css"> -->
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alice|Open+Sans|EB+Garamond:400i|Playfair+Display:400,700,900" rel="stylesheet">
 </head>
 <body data-spy='scroll' data-target='#internalnav'>
+  <!--nav bar standard across all pages -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -44,94 +45,88 @@
     </div>
   </nav>
 
-
-<div id = 'internalnav'>
-  <!-- <nav class="col-sm-3"> -->
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#section1" class = 'sidenavlink nav-link'>Summary</a></li>
-          <li><a href="#section2" class = 'sidenavlink nav-link'>Project Details</a></li>
-          <li><a href="#section3" class = 'sidenavlink nav-link'>Justification</a></li>
-        </ul>
-      <!-- </nav> -->
-</div>
-
-<div id= 'projectbody'>
-  <p ><div><span class='title' id = 'section1' >Image Classification & Bias</span></div></p>
-  <div class='subtitle'>Understanding why bias exists in facial analysis datasets</div>
-  <img src='../assets/images/project5/gwb.png' class='center-block img-responsive'>
-<div class= 'panel panel-default panel-body keytakeaways wow fadeInUp'>
-<div id = 'takeawaywords'>
-
-
-<p> <div class= 'lead'><b> Classifying images based on George W. </b><span class='subtext'> [October 2018; individual project]</span></div> </p>
-
-<p> <div class= 'lead'><b> Question: </b><span class='subtext'>How well does an facial classifier trained on George W Bush's face classify my facial features?</span></div> </p>
-
-
-  <p><div class= 'lead'> <b> Solution: </b><span class='subtext'>Trained an extra trees regressor model on 524 instances of George W Bush photographs.</span></div></p>
-
-<p><div class= 'lead'> <b> Impact: </b> <span class='subtext'>Showed extremely low accuracy when applied to images of my face due to overtly biased dataset </span> </div></p>
+  <!--sticky internal navigation-->
+  <div id = 'internalnav'>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#section1" class = 'sidenavlink nav-link'>Summary</a></li>
+      <li><a href="#section2" class = 'sidenavlink nav-link'>Project Details</a></li>
+      <li><a href="#section3" class = 'sidenavlink nav-link'>Justification</a></li>
+    </ul>
   </div>
-</div>
 
-<div class="panel panel-default wow fadeInUp">
-  <div class="panel-body">
-    <h2 id = 'section2'> Project Details</h2>
+  <!--project content-->
+  <div id= 'projectbody'>
+    <!--title and main hero image-->
+    <p ><div><span class='title' id = 'section1' >Image Classification & Bias</span></div></p>
+    <div class='subtitle'>Understanding why bias exists in facial analysis datasets</div>
+    <img src='../assets/images/project5/gwb.png' alt = 'pics of george w bush' class='center-block img-responsive'>
 
-<!-- <div class='pull-left'><img id = 'perceptionicon' src='priceperception.png'></div> -->
-<!-- <div class='pull-left'> -->
-  <div class='iwt'>
+    <!--summary panel-->
+    <div class= 'panel panel-default panel-body keytakeaways wow fadeInUp'>
+      <div id = 'takeawaywords'>
+        <p> <div class= 'lead'><b> Classifying images based on George W. </b><span class='subtext'> [October 2018; individual project]</span></div> </p>
+        <p> <div class= 'lead'><b> Question: </b><span class='subtext'>How well does an facial classifier trained on George W Bush's face classify my facial features?</span></div> </p>
+        <p><div class= 'lead'> <b> Solution: </b><span class='subtext'>Trained an extra trees regressor model on 524 instances of George W Bush photographs.</span></div></p>
+        <p><div class= 'lead'> <b> Impact: </b> <span class='subtext'>Showed extremely low accuracy when applied to images of my face due to overtly biased dataset </span> </div></p>
+      </div>
+    </div>
 
-<div id='projectdetails'>
-  <div>
-      <i class= 'glyphicon glyphicon-record'></i>
+    <!--project details panel-->
+    <div class="panel panel-default wow fadeInUp">
+      <div class="panel-body">
+        <h2 id = 'section2'> Project Details</h2>
+        <div class='iwt'>
+          <div id='projectdetails'>
+            <div>
+              <i class= 'glyphicon glyphicon-record'></i>
+              <h3> Key Insights</h3>
+            </div>
+            <ol>
+              <li> Easy data does not mean unbiased data
+              </li>
+              <li>It can be difficult to accurately understand bias based on results of a training model, especially when there are dozens of granular features
+              </li>
+            </ol>
+            <div>
+              <i class= 'glyphicon glyphicon-stats'></i>
+              <h3> Measurable Impact  </h3>
+            </div>
+            <ol>
+              <li> 	Built <a href='../assets/jupyternotebooks/nehashah_haii.html'> Jupyter notebook containing trained model  </a>  </li>
+              <li> 	Completed further secondary research on bias in data and potential avenues to mitigate  </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h3> Key Insights</h3>
+    <!--justification panel-->
+    <div class = 'justification wow fadeInUp panel panel-default'>
+      <div class='panel-body'>
+        <h2 id = 'section3'> Justification </h2>
+        <h3> Biased Datasets </h3>
+        <p> Labeled datasets are valuable and extremely useful in machine learning.  However, as we have learned from
+          <a href='https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28'>previous experiences</a>
+          and <a href='https://medium.com/s/story/facial-recognition-is-the-perfect-tool-for-oppression-bc2a08f0fe66'> opinions </a>,
+          there are significant risks to labeled datasets that are not representative of a diverse enough audience. The dataset "Labeled Faces in the Wild"
+          falls exactly under this category. George W Bush is the face most common in this dataset because it is based on people who were on Yahoo News over a 2 year period
+          in the early 2000s. While it is one of the more robust labeled facial datasets available, the fact that it is representing people were represented frequently in the news (e.g. the President of the United States)
+          has implications for what models trained on this dataset can and cannot recognize. We could easily and naively arrive at horrifying and insensitive results that perpetuate societal biases and stereotypes. </p>
+          <iframe class='center-block' width="560" height="315" src="https://www.youtube.com/embed/iRVZozEEWlE?start=312" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </div>
+    </div>
   </div>
-    <ol>
-      <li> Easy data does not mean unbiased data
-</li>
-	<li>It can be difficult to accurately understand bias based on results of a training model, especially when there are dozens of granular features
-</li>
-</ol>
-<div>
-  <i class= 'glyphicon glyphicon-stats'></i>
-  <h3> Measurable Impact  </h3>
-</div>
-<ol>
-  <li> 	Built <a href='../assets/jupyternotebooks/nehashah_haii.html'> Jupyter notebook containing trained model  </a>  </li>
-  <li> 	Completed further secondary research on bias in data and potential avenues to mitigate  </li>
 
-</ol>
-</div>
-</div>
-  <!-- </div> -->
-</div>
-</div>
-<div class = 'justification wow fadeInUp panel panel-default'>
-  <div class='panel-body'>
-<h2 id = 'section3'> Justification </h2>
-<h3> Biased Datasets </h3>
-<p> Labeled datasets are valuable and extremely useful in machine learning.  However, as we have learned from
-  <a href='https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28'>previous experiences</a>
-  and <a href='https://medium.com/s/story/facial-recognition-is-the-perfect-tool-for-oppression-bc2a08f0fe66'> opinions </a>,
-there are significant risks to labeled datasets that are not representative of a diverse enough audience. The dataset "Labeled Faces in the Wild"
-falls exactly under this category. George W Bush is the face most common in this dataset because it is based on people who were on Yahoo News over a 2 year period
-in the early 2000s. While it is one of the more robust labeled facial datasets available, the fact that it is representing people were represented frequently in the news (e.g. the President of the United States)
-has implications for what models trained on this dataset can and cannot recognize. We could easily and naively arrive at horrifying and insensitive results that perpetuate societal biases and stereotypes. </p>
-<iframe class='center-block' width="560" height="315" src="https://www.youtube.com/embed/iRVZozEEWlE?start=312" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-</div>
-</div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <!--all the Javascript libraries-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/project.js" type="text/javascript"></script>
-<script src="../assets/js/wow.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/project.js" type="text/javascript"></script>
+  <script src="../assets/js/wow.min.js"></script>
 </body>
 </html>

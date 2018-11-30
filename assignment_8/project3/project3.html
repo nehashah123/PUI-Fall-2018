@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alice|Open+Sans|EB+Garamond:400i|Playfair+Display:400,700,900" rel="stylesheet">
 </head>
 <body data-spy='scroll' data-target='#internalnav'>
+  <!--nav bar standard across all pages -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -44,95 +45,86 @@
     </div>
   </nav>
 
+  <!--sticky internal navigation-->
+  <div id = 'internalnav'>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#section1" class = 'sidenavlink nav-link'>Summary</a></li>
+      <li><a href="#section2" class = 'sidenavlink nav-link'>Project Details</a></li>
+      <li><a href="#section3" class = 'sidenavlink nav-link'>Justification</a></li>
+    </ul>
+  </div>
 
-<div id = 'internalnav'>
-  <!-- <nav class="col-sm-3"> -->
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#section1" class = 'sidenavlink nav-link'>Summary</a></li>
-          <li><a href="#section2" class = 'sidenavlink nav-link'>Project Details</a></li>
-          <li><a href="#section3" class = 'sidenavlink nav-link'>Justification</a></li>
-        </ul>
-      <!-- </nav> -->
-</div>
-
+<!--project content-->
 <div id= 'projectbody'>
+  <!--title and main hero image-->
   <p ><div><span class='title' id = 'section1' >Holiday Deals on Jet</span></div></p>
   <div class='subtitle'>Creating deal definition for Walmart eCommerce</div>
-  <img src='../assets/images/project3/deals.png' class='center-block img-responsive'>
-<div class= 'panel panel-default panel-body keytakeaways wow fadeInUp'>
-<div id = 'takeawaywords'>
+  <img src='../assets/images/project3/deals.png' alt = 'deals' class='center-block img-responsive'>
 
+  <!--summary panel-->
+  <div class= 'panel panel-default panel-body keytakeaways wow fadeInUp'>
+    <div id = 'takeawaywords'>
+      <p> <div class= 'lead'><b> Holiday Deals at Jet </b><span class='subtext'> [August-November 2017; Led cross-functional team as product manager]</span></div> </p>
+      <p> <div class= 'lead'><b> Question: </b><span class='subtext'>How do we represent temporary drops to regular prices on Jet?</span></div> </p>
+      <p><div class= 'lead'> <b> Solution: </b><span class='subtext'>Define legal definition of deals for Walmart eCommerce that protects user preception</span></div></p>
+      <p><div class= 'lead'> <b> Impact: </b> <span class='subtext'>By developing legally sound definition, Jet was able to promote deals broadly online, leading to 25x standard conversion rate on "deals page"</span> </div></p>
+    </div>
+  </div>
 
-<p> <div class= 'lead'><b> Holiday Deals at Jet </b><span class='subtext'> [August-November 2017; Led cross-functional team as product manager]</span></div> </p>
+  <!--project details panel-->
+  <div class="panel panel-default wow fadeInUp">
+    <div class="panel-body">
+      <h2 id = 'section2'> Project Details</h2>
+      <div class='iwt'>
 
-<p> <div class= 'lead'><b> Question: </b><span class='subtext'>How do we represent temporary drops to regular prices on Jet?</span></div> </p>
+        <div id='projectdetails'>
+          <div>
+            <i class= 'glyphicon glyphicon-record'></i>
+            <h3> Key Insights</h3>
+          </div>
+          <ol>
+            <li> It's critical to be upfront and transparent with the customer -- without being complex
+            </li>
+            <li>It's possible to work with regulations to provide a strong experience for the user</li>
+          </ol>
+          <div>
+            <i class= 'glyphicon glyphicon-stats'></i>
+            <h3 > Measurable Impact  </h3>
+          </div>
+          <ol>
+            <li>Created the legal definition of deals for Walmart eCommerce (used across both Jet and Walmart.com) that is still held today</li>
+            <li> The page deals that were launched for Holiday 2017 allowed led to a 25x increase in conversion rate for visitors to that page compared to visitors to a standard PDP during the same timeframe
+            </li>
+          </ol>
+        </div>
+      </div>
 
+    </div>
+  </div>
+  <!--justification panel-->
+  <div class = 'justification wow fadeInUp panel panel-default'>
+    <div class='panel-body'>
+      <h2 id = 'section3'> Justification </h2>
+      <h3> Legal Process </h3>
+      <p> To develop a legal definition of deals alongside the Jet and Walmart legal teams, I utilized outside counsel to understand what precedence had been set for list prices and deals in the past. The most critical determination was what defines a "regular price" from which retailers can claim a discount. California was found to have some of the strictest laws protecting consumers in this area and precedence from cases in California led our definition development process. Because there are no laws specific to dynamic pricing systems, and because "regular prices" are not the same online as they are in store (because online prices can change weekly if not daily), I worked with the legal team to come up with a definition that served the user's best interest.  I wanted to make sure that when a user saw a deal on Jet or Walmart.com, it was clearly a good value based on what prices a user may have seen on the site before.
+      </p>
+      <br>
+      <h3> Competitive Analysis </h3>
+      <p> I reviewed how others define a deal as part of my research in coming up with a definition that was good value to users. For Amazon's "deals", I found that deals that are sold by Amazon SxS and contain “was” price (not “list” price) use the highest price that was on site 1-2 months ago regardless of duration.
+      </p>
+      <img src='../assets/images/project3/amazondeal.png' alt = 'example of amazon deal' class='center-block img-responsive'>
+      <p>Meanwhile, Google had recently launched an additional feature to its PLA tiles to show "price drops" from standard prices as determined by Google. When I looked into Google's definition, I found that they were using a 90-day average price based on historical pricing from PLA feeds.</p>
+      <img src='../assets/images/project3/googledeal.png' alt = 'example of google deal' class='center-block img-responsive'>
+      <h3> UX Considerations </h3>
+      <p> A point of particular contention unique to Jet was the dichotomy between real savings and discounted prices. Whereas deals indicate discounted prices, Jet had the unique value proposition of providing real-time savings based on a variety of factors. While we wanted to make it clear to customers that they had made a smart purchase, we didn't want them to think that their specific unique cart actions had unlocked real savings. We therefore made an explicit design decision to not include deal discounts in any of the "savings" totals we showed in the experience, including the "extra savings" line we showed at the cart checkout page.
+      </p>
+      <img src='../assets/images/project3/cartsavings.png' alt = 'example of cart savings on Jet' class='center-block img-responsive'>
 
-  <p><div class= 'lead'> <b> Solution: </b><span class='subtext'>Define legal definition of deals for Walmart eCommerce that protects user preception</span></div></p>
-
-<p><div class= 'lead'> <b> Impact: </b> <span class='subtext'>By developing legally sound definition, Jet was able to promote deals broadly online, leading to 25x standard conversion rate on "deals page"</span> </div></p>
+    </div>
   </div>
 </div>
 
-<div class="panel panel-default wow fadeInUp">
-  <div class="panel-body">
-    <h2 id = 'section2'> Project Details</h2>
-
-<!-- <div class='pull-left'><img id = 'perceptionicon' src='priceperception.png'></div> -->
-<!-- <div class='pull-left'> -->
-  <div class='iwt'>
-
-<div id='projectdetails'>
-  <div>
-    <i class= 'glyphicon glyphicon-record'></i>
-<h3> Key Insights</h3>
-</div>
-    <ol>
-      <li> It's critical to be upfront and transparent with the customer -- without being complex
-</li>
-	<li>It's possible to work with regulations to provide a strong experience for the user</li>
-</ol>
-<div>
-  <i class= 'glyphicon glyphicon-stats'></i>
- <h3 > Measurable Impact  </h3>
-</div>
-     <ol>
-       <li>Created the legal definition of deals for Walmart eCommerce (used across both Jet and Walmart.com) that is still held today</li>
-       <li> The page deals that were launched for Holiday 2017 allowed led to a 25x increase in conversion rate for visitors to that page compared to visitors to a standard PDP during the same timeframe
-</li>
-</ol>
-</div>
-</div>
-  <!-- </div> -->
-</div>
-</div>
-<div class = 'justification wow fadeInUp panel panel-default'>
-  <div class='panel-body'>
-<h2 id = 'section3'> Justification </h2>
-<h3> Legal Process </h3>
-<p> To develop a legal definition of deals alongside the Jet and Walmart legal teams, I utilized outside counsel to understand what precedence had been set for list prices and deals in the past. The most critical determination was what defines a "regular price" from which retailers can claim a discount. California was found to have some of the strictest laws protecting consumers in this area and precedence from cases in California led our definition development process. Because there are no laws specific to dynamic pricing systems, and because "regular prices" are not the same online as they are in store (because online prices can change weekly if not daily), I worked with the legal team to come up with a definition that served the user's best interest.  I wanted to make sure that when a user saw a deal on Jet or Walmart.com, it was clearly a good value based on what prices a user may have seen on the site before.
-</p>
-<br>
-<h3> Competitive Analysis </h3>
-<p> I reviewed how others define a deal as part of my research in coming up with a definition that was good value to users. For Amazon's "deals", I found that deals that are sold by Amazon SxS and contain “was” price (not “list” price) use the highest price that was on site 1-2 months ago regardless of duration.
-</p>
-<img src='../assets/images/project3/amazondeal.png' class='center-block img-responsive'>
-<p>Meanwhile, Google had recently launched an additional feature to its PLA tiles to show "price drops" from standard prices as determined by Google. When I looked into Google's definition, I found that they were using a 90-day average price based on historical pricing from PLA feeds.</p>
-<img src='../assets/images/project3/googledeal.png' class='center-block img-responsive'>
-<h3> UX Considerations </h3>
-<p> A point of particular contention unique to Jet was the dichotomy between real savings and discounted prices. Whereas deals indicate discounted prices, Jet had the unique value proposition of providing real-time savings based on a variety of factors. While we wanted to make it clear to customers that they had made a smart purchase, we didn't want them to think that their specific unique cart actions had unlocked real savings. We therefore made an explicit design decision to not include deal discounts in any of the "savings" totals we showed in the experience, including the "extra savings" line we showed at the cart checkout page.
-</p>
-<img src='../assets/images/project3/cartsavings.png' class='center-block img-responsive'>
-
-</div>
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-
-
-
-
+<!--all the Javascript libraries-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
